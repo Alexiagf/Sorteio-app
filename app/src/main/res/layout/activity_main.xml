@@ -7,46 +7,57 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/textViewREsultado"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/TextViewResultado"
+        android:layout_width="115dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="282dp"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextInicial" />
 
     <Button
         android:id="@+id/Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:text="Sorteio"
-        android:onClick="Sorteio"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewREsultado" />
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="178dp"
+        android:onClick="SorteiaNumero"
+        android:text="Sortear"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/TextViewResultado"
+        app:layout_constraintTop_toBottomOf="@+id/TextViewResultado"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
-        android:id="@+id/EdtTexfinal"
-        android:layout_width="178dp"
-        android:layout_height="33dp"
+        android:id="@+id/EditTextfinal"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginBottom="60dp"
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintBaseline_toBaselineOf="@+id/editText2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/TextViewResultado"
+        app:layout_constraintEnd_toStartOf="@+id/editTextInicial"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editText2"
-        android:layout_width="194dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="152dp"
+        android:id="@+id/editTextInicial"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="188dp"
+        android:layout_marginEnd="23dp"
+        android:layout_marginBottom="59dp"
+        android:autofillHints=""
         android:ems="10"
         android:inputType="number"
-        app:layout_constraintStart_toEndOf="@+id/EdtTexfinal"
-        app:layout_constraintTop_toTopOf="parent"
-        android:autofillHints="" />
+        app:layout_constraintBottom_toTopOf="@+id/TextViewResultado"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/EditTextfinal"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
